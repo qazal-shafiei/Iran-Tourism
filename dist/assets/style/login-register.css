@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.ttf");
+}
+
+body,
+html {
+  direction: rtl;
+  height: 100%;
+}
+
+::-moz-selection {
+  background-color: #4ca1af;
+  color: #fff;
+}
+
+::selection {
+  background-color: #4ca1af;
+  color: #fff;
+}
+
+body {
+  background: #4ca1af;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4e0e5), to(#4ca1af));
+  background: linear-gradient(to bottom, #c4e0e5, #4ca1af);
+  font-family: "vazir" !important;
+  color: #414141 !important;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .login-box {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+body .container .login-box .btn-login {
+  background-color: #4ca1af;
+  color: #fff;
+  padding: .5em 2em;
+  border-radius: .5em;
+  border: none;
+}
+
+body .container .login-box .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #4ca1af;
+}
+
+body .container .login-box .form-check .form-check-input {
+  float: right;
+  margin-left: 1em;
+}
+/*# sourceMappingURL=login-register.css.map */
