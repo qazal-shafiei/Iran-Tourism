@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/Vazir.ttf");
+}
+body,
+html {
+    direction: rtl;
+    height: 100%;
+}
+
+::selection{
+    background-color: #4ca1af;
+    color: #fff;
+}
+
+body {
+    background: #4ca1af; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #c4e0e5, #4ca1af); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #c4e0e5,
+        #4ca1af
+    ); 
+    font-family: "vazir"!important;
+    color: #414141!important;
+
+    .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        .login-box {
+            background-color: #fff;
+            border-radius: 1em;
+            padding: 2em;
+            .btn-login{
+                background-color: #4ca1af;
+                color: #fff;
+                padding: .5em 2em;
+                border-radius: .5em;
+                border: none;
+            }
+
+            .form-control{
+                &:focus{
+                    box-shadow: none;
+                    border: 2px solid #4ca1af;
+                }
+            }
+
+            .form-check .form-check-input {
+                float: right;
+                margin-left: 1em;
+            }
+        }
+    }
+}
