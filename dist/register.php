@@ -48,6 +48,8 @@
                                             if ( isset($_GET['success']) && $_GET['success'] == 0 )
                                             {
                                                  echo "امکان اتصال به پایگاه داده وجود ندارد";
+                                            } else if (isset($_GET['confirmPassword']) && $_GET['confirmPassword'] == 0) {
+                                                echo "گذرواژه و تکرار آن یکسان نیست. دوباره تلاش کنید.";
                                             }
                                         ?>
                                     </div>
