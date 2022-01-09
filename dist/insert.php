@@ -9,9 +9,11 @@ if(isset($_POST['submit']))
     $sql = "INSERT INTO users (firstName,lastName,userName,password)
      VALUES ('$firstname','$lastname','$username','$password')";
     if (mysqli_query($conn, $sql)) {
-        echo "New record has been added  !";
+        header("Location: /login.php?success=1");
+        die();
     } else {
-        echo "Error: " . $sql . ":-" . mysqli_connect_error();
+        header("Location: /register.php?success=0");
+        die();
     }
     mysqli_close($conn);
 }
