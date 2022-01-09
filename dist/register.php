@@ -1,3 +1,4 @@
+
     <!DOCTYPE html>
     <html lang="en">
 
@@ -42,6 +43,14 @@
                             <h3 class="text-center fw-bold mb-3">ثبت نام</h3>
                             <form action="insert.php" method="post">
                                 <div class="mb-3">
+                                    <div class="alert-danger">
+                                        <?php
+                                            if ( isset($_GET['success']) && $_GET['success'] == 0 )
+                                            {
+                                                 echo "امکان اتصال به پایگاه داده وجود ندارد";
+                                            }
+                                        ?>
+                                    </div>
                                     <label for="inputPassword5" class="form-label">نام </label>
                                     <input type="text" id="" name="firstName" class="form-control">
                                 </div>
@@ -58,17 +67,20 @@
 
                                 <div class="mb-3">
                                     <label for="inputPassword5" class="form-label">گذرواژه</label>
-                                    <input type="password" name="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+                                    <input type="password" name="password" id="inputPassword" class="form-control"
+                                        aria-describedby="passwordHelpBlock">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="inputPassword5" class="form-label">تکرار گذرواژه</label>
-                                    <input type="password" name="confirm_password" id="inputPassword" class="form-control" aria-describedby="passwordHelpBlock">
+                                    <input type="password" name="confirm_password" id="inputPassword"
+                                        class="form-control" aria-describedby="passwordHelpBlock">
                                 </div>
 
                                 <div class="col-xl-12 d-flex justify-content-center">
-                                    <a href="login.html" class="text-center text-decoration-none text-dark my-4"> <small>برای
-                                    برای ورود کلیک کنید !</small></a>
+                                    <a href="login.html" class="text-center text-decoration-none text-dark my-4">
+                                        <small>برای
+                                            برای ورود کلیک کنید !</small></a>
                                 </div>
 
                                 <div class="col-xl-12 d-flex justify-content-center">
@@ -85,15 +97,15 @@
                     <section>
                         <span class="logo"><em>کجا</em> بریم</span>
                         <span>
-          <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-        </span>
+                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </span>
                         <span>
-          <a href="#">تماس با ما</a>
-          <a href="#">درباره ما</a>
-          <a href="#">تخیفیف های ویژه</a>
-        </span>
+                            <a href="#">تماس با ما</a>
+                            <a href="#">درباره ما</a>
+                            <a href="#">تخیفیف های ویژه</a>
+                        </span>
                     </section>
                 </div>
                 <div class="bottom_section">
