@@ -81,7 +81,7 @@
 
                                 <div class="col-xl-12 d-flex justify-content-center">
                                     <a href="login.html" class="text-center text-decoration-none text-dark my-4">
-                                        <small>برای
+                                        <small>
                                             برای ورود کلیک کنید !</small></a>
                                 </div>
 
