@@ -22,12 +22,12 @@
         <!--Navbar-->
         <header id="header">
             <div class="topnav" id="myTopnav">
-                <a href="./index.html" id="logo" class="logo"><em>کجا</em> بریم</a>
-                <a href="./index.html" class="animate">خانه</a>
+                <a href="./index.php" id="logo" class="logo"><em>کجا</em> بریم</a>
+                <a href="./index.php" class="animate">خانه</a>
                 <a href="./aboutus.html" class="animate">درباره ما</a>
                 <a href="./contactus.html" class="animate">تماس با ما</a>
                 <a href="./Irandtourism.html" class="animate">ایران گردی</a>
-                <a href="./login.html" class="animate">ورود</a>
+                <a href="./login.php" class="animate">ورود</a>
                 <a href="./register.php" id="active" class="animate">ثبت نام</a>
                 <a href="#background" class="animate"><input type="text" placeholder="جستجو" class="form-control"></a>
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
@@ -80,7 +80,7 @@
                                 </div>
 
                                 <div class="col-xl-12 d-flex justify-content-center">
-                                    <a href="login.html" class="text-center text-decoration-none text-dark my-4">
+                                    <a href="login.php" class="text-center text-decoration-none text-dark my-4">
                                         <small>
                                             برای ورود کلیک کنید !</small></a>
                                 </div>

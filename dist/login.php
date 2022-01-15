@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,12 +22,12 @@
   <!--Navbar-->
   <header id="header">
     <div class="topnav" id="myTopnav">
-      <a href="./index.html" id="logo" class="logo"><em>کجا</em> بریم</a>
-      <a href="./index.html" class="animate">خانه</a>
+      <a href="./index.php" id="logo" class="logo"><em>کجا</em> بریم</a>
+      <a href="./index.php" class="animate">خانه</a>
       <a href="./aboutus.html" class="animate">درباره ما</a>
       <a href="./contactus.html" class="animate">تماس با ما</a>
       <a href="./Irandtourism.html" class="animate">ایران گردی</a>
-      <a href="./login.html" id="active" class="animate">ورود</a>
+      <a href="./login.php" id="active" class="animate">ورود</a>
       <a href="./register.php" class="animate">ثبت نام</a>
       <a href="#background" class="animate"><input type="text" placeholder="جستجو" class="form-control"></a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
@@ -44,24 +45,35 @@
                   if ( isset($_GET['success']) && $_GET['success'] == 1 )
                   {
                        echo "با موفقیت ثبت نام شدید";
-                  }
+                  } 
                   ?>
                   </div>
+                  <div class="alert-danger">
+                    <?php
+                    if ( isset($_GET['success']) && $_GET['success'] == 0 )
+                    {
+                         echo "نام کاربری یا رمز عبور صحیح نمیباشد";
+                    } else if(isset($_GET['emptyFeild'])&& $_GET['emptyFeild'] == 1 ) 
+                    {
+                      echo "نام کاربری یا رمز عبور نمیتواند خالی باشد";
+                    }
+                    ?>
+                  </div>
                     <h3 class="text-center fw-bold mb-3">ورود</h3>
-                    <form>
+                    <form action="loginAction.php" method="POST">
                         <label for="inputPassword5" class="form-label">نام کاربری</label>
-                        <input type="text" id="inputPassword" class="form-control">
+                        <input type="text" name="username" id="inputPassword" class="form-control">
 
                         <label for="inputPassword5" class="form-label mt-3">گذرواژه</label>
-                        <input type="password" id="inputPassword" class="form-control"
+                        <input type="password" name="password" id="inputPassword" class="form-control"
                             aria-describedby="passwordHelpBlock">
 
                         <div class="col-xl-12 d-flex justify-content-center">
-                            <a href="register.html" class="text-center text-decoration-none text-dark my-4"> <small>برای ثبت نام کلیک کنید !</small></a>
+                            <a href="register.php" class="text-center text-decoration-none text-dark my-4"> <small>برای ثبت نام کلیک کنید !</small></a>
                         </div>
 
                         <div class="col-xl-12 d-flex justify-content-center">
-                            <button type="submit" class="mt-3 mx-auto btn-login">ورود</button>
+                            <button type="submit" name="submit" class="mt-3 mx-auto btn-login">ورود</button>
                         </div>
                     </form>
                 </div>
